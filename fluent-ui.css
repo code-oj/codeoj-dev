@@ -1,0 +1,192 @@
+/* All UI */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Buttons */
+button {
+    background-color: #1e1e1e; /* Button background */
+    color: #ffffff; /* Button text color */
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid #444; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.1s; /* Transition effects */
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #534e60; /* Hover background color */
+    border-color: #afa2d0;
+    transform: translateY(-1px); /* Slight lift on hover */
+}
+
+button:active {
+    background-color: #9786c4; /* Active state background color */
+    border-color: #746d87;
+    color: #000;
+    transform: translateY(1px); /* Slight push down on click */
+}
+
+/* Input Fields */
+input[type="text"], 
+input[type="password"], 
+textarea {
+    background-color: #1e1e1e; /* Input background */
+    color: #ffffff; /* Text color */
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid #444; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in width */
+    margin: 10px;
+}
+
+input[type="text"]:hover, 
+input[type="password"]:hover, 
+textarea:hover {
+    background-color: #242424; /* Input background */
+    transform: translateY(-1px); /* Slight lift on hover */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #756897; /* Focus border color */
+    outline: none; /* Remove default outline */
+}
+
+/* Select Dropdown */
+select {
+    background-color: #1e1e1e; /* Dropdown background */
+    color: #ffffff; /* Text color */
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid #444; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    margin: 10px;
+}
+
+select:focus {
+    background-color: #202020; /* Hover background color */
+    border-color: #756897;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Track background */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #444; /* Scroll thumb color */
+    border-radius: 10px; /* Rounded corners for thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #756897; /* Thumb color on hover */
+}
+
+/* Card Style for Containers */
+.card {
+    background-color: #1e1e1e; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid #756897; /* Border color */
+    padding: 10px; /* Inner padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    color: #ffffff;
+    margin: 10px;
+}
+
+/* Link Styles */
+a {
+    color: #8981a7; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin: 10px;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.warning-card {
+    background-color: #5e5b31; /* Card background */
+    border-radius: 8px; /* Rounded corners */
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid #8e8a54; /* Border color */
+    padding: 10px; /* Inner padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    color: #ffffff;
+    margin: 10px;
+}
+
+.tip-card {
+    background-color: #202f3d; /* Card background */
+    border-radius: 8px; /* Rounded corners */
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid #385168; /* Border color */
+    padding: 10px; /* Inner padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    color: #ffffff;
+    margin: 10px;
+    top: 0;
+    left: 0;
+}
+
+.error-card {
+    background-color: #3d2020; /* Card background */
+    border-radius: 8px; /* Rounded corners */
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid #633535; /* Border color */
+    padding: 10px; /* Inner padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    color: #ffffff;
+    margin: 10px;
+}
+
+.progress-bar {
+    height: 10px;
+    margin: 10px;
+    background: #1e1e1e66;
+    border-radius: 10px;
+}
+
+.progress-bar-value {
+    height: 10px;
+    background: #afa2d0;
+    border-radius: 10px;
+}
+
+h1 {
+    padding: 10px;
+    margin: 10px;
+    margin-left: 25px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+h1:hover {
+    border: none;
+    border-left: soild 4px #756897;
+}

@@ -1,0 +1,72 @@
+<!-- DO NOT COPY THIS FILE -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Code.OJ</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="fluent-ui.css" />
+        <link rel="shutcut icon" href="resources/svglogo.svg">
+
+        <!-- Loader styles -->
+        <style>
+            .loader {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgb(0, 0, 0);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 9999; /* Make sure it covers everything */
+                animation: loading-fade-out 3s;
+            }
+
+            .loader .spinner {
+                border: 8px solid #000000; 
+                border-top: 8px solid #69739C; 
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                animation: loading-spin 0.75s linear infinite;
+            }
+            
+            @keyframes loading-fade-out {
+                0% { opacity: 1; }
+                80% { opacity: 1; }
+                100% { opacity: 0; }
+            }
+
+            @keyframes loading-spin {
+                0% { transform: rotate(0deg); } 
+                50% { transform: rotate(100deg); }
+                100% { transform: rotate(360deg); }
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="loader" id="loader">
+            <div class="spinner"></div>
+        </div>
+
+        <div class="content" id="content">
+            <input type="text" placeholder="Search..." />
+            <button>This is an button</button>
+            <div class="error-card">An error.</div>
+            <select></select>
+        </div>
+
+        <script>
+            // Simulate a loading time of 3 seconds.
+            window.onload = function() {
+                setTimeout(function() {
+                    // Hide the loader and show the main content.
+                    document.getElementById("loader").style.display = "none";
+                    document.getElementById("content").style.display = "block";
+                }, 3000); // Change this value for longer or shorter loading time.
+            };
+        </script>
+    </body>
+</html>

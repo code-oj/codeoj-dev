@@ -1,0 +1,41 @@
+@import url(animations.css);
+
+body {
+    background: rgb(30, 30, 30);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    zoom: 1;
+    margin: 0px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: url(resources/bg.jpg);
+	background-color: #000000;
+	background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
+
+.content {
+	animation: fade-in 0.7s;
+	backdrop-filter: blur(50px);
+    background: #000000cc;
+    position: absolute;
+    margin: 20px;
+    width: 100%;
+	height: 100%;
+    perspective: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	display: none;
+	padding: 20px;
+    box-shadow: 10px 5px #00000099 blur(50px);
+}
+
